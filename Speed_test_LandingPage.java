@@ -20,6 +20,9 @@ public class Speed_test_LandingPage {
                     register();
                     break;
                 case "3":
+                    About_Us_Screen.displayAboutUs();
+                    break;
+                case "4":
                     exit();
                     running = false;
                     break;
@@ -34,7 +37,8 @@ public class Speed_test_LandingPage {
         System.out.println("To begin, please select one of the following options:");
         System.out.println("1. Login");
         System.out.println("2. Register");
-        System.out.println("3. Exit");
+        System.out.println("3. About Us");
+        System.out.println("4. Exit");
         System.out.print("Choose an option: ");
     }
 
@@ -45,6 +49,7 @@ public class Speed_test_LandingPage {
         System.out.print("Enter password: ");
         String password = scanner.nextLine();
         System.out.println("Login successful! Welcome, " + username + "!\n");
+        User_Type_Screen.displayTypingTestScreen();
     }
 
     private static void register() {
